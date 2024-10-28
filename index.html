@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di Web DuosTeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Produk Makanan/Minuman DuosTeria</h1>
+        <p>Rasakan Kelezatan dan Kesehatan dalam Setiap Gigitan</p>
+    </header>
+
+    <!-- Produk Section -->
+    <section id="products">
+        <!-- Minuman -->
+        <div class="product-card">
+            <h2>Es Teh Jumbo</h2>
+            <p>Minuman segar yang menyegarkan dan sehat.</p>
+            <button onclick="showComposition('minuman1')">Lihat Komposisi</button>
+        </div>
+
+        <!-- Snack 1 -->
+        <div class="product-card">
+            <h2>Sosis Bantal</h2>
+            <p>Makanan sehat dengan rasa yang nikmat.</p>
+            <button onclick="showComposition('snack1')">Lihat Komposisi</button>
+        </div>
+
+        <!-- Snack 2 -->
+        <div class="product-card">
+            <h2>Jagung Potong HTS</h2>
+            <p>Makanan enak dan mengenyangkan.</p>
+            <button onclick="showComposition('snack2')">Lihat Komposisi</button>
+        </div>
+    </section>
+
+    <!-- Modal Komposisi -->
+    <div id="composition-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Komposisi produk</h3>
+            <p id="composition-text">Komposisi produk akan tampil di sini.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
